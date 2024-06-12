@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* form section */
+section {
+    position: relative;
+    height: 63vh;
+    width: 28%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+
+/* from heading */
+h3 {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    top: 30px;
+}
+
+/* from list */
+form {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 90%;
+    top: 20%;
+}
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+    padding: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+/* form inputs */
+input[type="text"],
+input[type="password"],
+input[type="password2"],
+input[type="email"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: border-color 0.3s ease,box-shadow 0.3s ease;
+    padding: .3em;
+    margin: auto;
+    position: absolute;
+    right: 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="password2"]:focus,
+input[type="email"]:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+/* Submit Button */
+form button {
+    width: 55%;
+    padding: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 160%;
+    right: 85px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+p {
+    position: absolute;
+    top: 195%;
+    right: 19%;
+    color: #fff;
+    text-decoration: none;
+}
+
+a{
+    color: #2575fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6a11cb;
+}
